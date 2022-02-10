@@ -7,7 +7,7 @@ public class Mayor10 {
 
 		List<Integer> numbers=List.of(18,6,4,12,55,78,12);
 
-		Long Mayor10 = numbers.stream().filter(a->a>10).count();
+		Long Mayor10 = numbers.stream().filter(l->l>10).count();
 		
 		System.out.println(Mayor10);
 
