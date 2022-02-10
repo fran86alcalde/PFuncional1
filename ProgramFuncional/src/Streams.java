@@ -39,17 +39,12 @@ public class Streams {
 		
 		
 		
+		Optional<Integer> st;
 		String resultado = st.map((l) -> l.getTitulo()).collect(Collectors.joining(","));
-		 
-		 System.out.println(resultado);
 		
-
-		 Optional<Integer> resultado3 = st.map((l) -> l.getPaginas()).collect(Collectors.reducing(Integer::sum));
+		Optional<Integer> lista = st.map((l) -> l.getPaginas()).collect(Collectors.reducing(Integer::sum));	 
 		 
-		 System.out.println(resultado3.get());
-		 
-		 
-		 List <Libro> lista2 = Arrays.asList(l1, l2);
+		List <Libro> lista2 = Arrays.asList(l1, l2);
 				 
 		 Collection<Libro>   lista;
 		  lista.stream()
